@@ -50,3 +50,7 @@ def remove_product(id: int, db: Session = Depends(database.get_db)):
         raise HTTPException(status_code=404, detail=f"Product with ID {id} not found")
     crud.delete_product(db, product)
     return {"detail": f"Product with ID {id} has been successfully deleted."}
+
+    git add .
+git commit -m "Added holiday discount calculation to products"
+git push
